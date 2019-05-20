@@ -30,7 +30,7 @@ class Dashboard extends Component {
     }
 
     async getmyData() {
-        const response = await axios.get('/data.json', {})
+        const response = await axios.get('/data.json', {}) //statvis
         if (response.status === 200) {
             this.setState(state => {
                 state.myData = response.data
