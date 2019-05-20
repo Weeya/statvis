@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import SimpleLineChart from './SimpleLineChart';
-import SimpleTable from './SimpleTable';
+import Home from './Home';
+import MyLineChart1 from './LineChart1';
+import MyLineChart2 from './LineChart2';
+import MyBarChart from './Barchart';
 
 const styles = theme => ({
     root: {
@@ -27,24 +28,16 @@ const styles = theme => ({
 class Content extends React.Component {
 
     render() {
-        const { classes, contentrender } = this.props;
+        const { classes, content, contentrender } = this.props;
 
         return (
             <Fragment>
                 <main className={classes.content}>
                     <div className={classes.appBarSpacer} />
-                    <Typography variant="h4" gutterBottom component="h2">
-                        {contentrender}
-                    </Typography>
-                    {/* <Typography component="div" className={classes.chartContainer}>
-                        <SimpleLineChart />
-                    </Typography>
-                    <Typography variant="h4" gutterBottom component="h2">
-                        Products
-                    </Typography>
-                    <div className={classes.tableContainer}>
-                        <SimpleTable />
-                    </div> */}
+                    {contentrender.toLowerCase() === "home" ? <Home/> : null}
+                    {contentrender.toLowerCase() === "graph_1" ? <MyLineChart1 data={content["graph_1"]} /> : null}
+                    {contentrender.toLowerCase() === "graph_2" ? <MyLineChart2 data={content["graph_2"]} /> : null}
+                    {contentrender.toLowerCase() === "graph_3" ? <MyBarChart data={content["graph_3"]} /> : null}
                 </main>
             </Fragment>
         );

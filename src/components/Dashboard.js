@@ -22,7 +22,7 @@ class Dashboard extends Component {
         this.state = {
             myData: {},
             open: false,
-            contentrender: ""
+            contentrender: "home"
         };
         this.getmyData = this.getmyData.bind(this)
         this.setOpen = this.setOpen.bind(this)
@@ -60,7 +60,6 @@ class Dashboard extends Component {
     render() {
         const { classes } = this.props;
         const { myData, open, contentrender } = this.state;
-        console.log(myData)
 
         return (
             <div className={classes.root}>
