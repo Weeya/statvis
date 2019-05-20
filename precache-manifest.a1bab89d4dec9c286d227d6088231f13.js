@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b82f096599bc60fd78a41a5bd2e0f326",
+    "revision": "4e18fc5e433671f3d2876630573dfb9f",
     "url": "/statvis/index.html"
   },
   {
-    "revision": "483b2b17b0a1aa7f7559",
+    "revision": "5030e23a62b99377b268",
     "url": "/statvis/static/css/main.2cce8147.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/statvis/static/js/2.6e266448.chunk.js"
   },
   {
-    "revision": "483b2b17b0a1aa7f7559",
-    "url": "/statvis/static/js/main.02ea5f71.chunk.js"
+    "revision": "5030e23a62b99377b268",
+    "url": "/statvis/static/js/main.fbdf96f0.chunk.js"
   },
   {
     "revision": "e55ea8dddf9d79366c85",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/statvis/static/css/main.2cce8147.chunk.css",
-    "main.js": "/statvis/static/js/main.02ea5f71.chunk.js",
-    "main.js.map": "/statvis/static/js/main.02ea5f71.chunk.js.map",
+    "main.js": "/statvis/static/js/main.fbdf96f0.chunk.js",
+    "main.js.map": "/statvis/static/js/main.fbdf96f0.chunk.js.map",
     "runtime~main.js": "/statvis/static/js/runtime~main.645b05d2.js",
     "runtime~main.js.map": "/statvis/static/js/runtime~main.645b05d2.js.map",
     "static/js/2.6e266448.chunk.js": "/statvis/static/js/2.6e266448.chunk.js",
     "static/js/2.6e266448.chunk.js.map": "/statvis/static/js/2.6e266448.chunk.js.map",
     "index.html": "/statvis/index.html",
-    "precache-manifest.797c69e79145980aad26cbaf6f3e7af2.js": "/statvis/precache-manifest.797c69e79145980aad26cbaf6f3e7af2.js",
+    "precache-manifest.a1bab89d4dec9c286d227d6088231f13.js": "/statvis/precache-manifest.a1bab89d4dec9c286d227d6088231f13.js",
     "service-worker.js": "/statvis/service-worker.js",
     "static/css/main.2cce8147.chunk.css.map": "/statvis/static/css/main.2cce8147.chunk.css.map"
   }
