@@ -25,6 +25,7 @@ const styles = theme => ({
         display: 'flex',
     },
     toolbar: {
+        backgroundColor: "#128c7e",
         paddingRight: 24, // keep right padding when drawer closed
     },
     toolbarIcon: {
@@ -74,15 +75,15 @@ const styles = theme => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
-        width: theme.spacing.unit * 7,
+        width: theme.spacing(7),
         [theme.breakpoints.up('sm')]: {
-            width: theme.spacing.unit * 9,
+            width: theme.spacing(9),
         },
     },
     appBarSpacer: theme.mixins.toolbar,
     content: {
         flexGrow: 1,
-        padding: theme.spacing.unit * 3,
+        padding: theme.spacing(3),
         height: '100vh',
         overflow: 'auto',
     },
@@ -93,7 +94,7 @@ const styles = theme => ({
         height: 320,
     },
     h5: {
-        marginBottom: theme.spacing.unit * 2,
+        marginBottom: theme.spacing(2),
     },
 });
 
@@ -113,6 +114,12 @@ class Dashboard extends React.Component {
     render() {
         const { classes } = this.props;
 
+        if (this.props.data) {
+            var name = this.props.data.main;
+        }
+
+        console.log(name)
+
         return (
             <div className={classes.root}>
                 <CssBaseline />
@@ -130,7 +137,7 @@ class Dashboard extends React.Component {
                                 this.state.open && classes.menuButtonHidden,
                             )}
                         >
-                            <MenuIcon />
+                        <MenuIcon />
                         </IconButton>
                         <Typography
                             component="h1"
@@ -140,7 +147,7 @@ class Dashboard extends React.Component {
                             className={classes.title}
                         >
                             Dashboard
-            </Typography>
+                        </Typography>
                         <IconButton color="inherit">
                             <Badge badgeContent={4} color="secondary">
                                 <NotificationsIcon />
@@ -169,13 +176,13 @@ class Dashboard extends React.Component {
                     <div className={classes.appBarSpacer} />
                     <Typography variant="h4" gutterBottom component="h2">
                         Orders
-          </Typography>
+                    </Typography>
                     <Typography component="div" className={classes.chartContainer}>
                         <SimpleLineChart />
                     </Typography>
                     <Typography variant="h4" gutterBottom component="h2">
                         Products
-          </Typography>
+                    </Typography>
                     <div className={classes.tableContainer}>
                         <SimpleTable />
                     </div>
